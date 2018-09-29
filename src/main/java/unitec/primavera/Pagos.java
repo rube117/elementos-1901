@@ -5,11 +5,10 @@
  */
 package unitec.primavera;
 
-import java.util.List;
-
 /**
  *
  * @author T-107
  */
-public interface Tarjetas {
+public interface Pagos {
+    public void pagar();
 }

@@ -9,34 +9,10 @@ package unitec.primavera;
  *
  * @author T-107
  */
-public class TarjetaDebito {
-    private String nombre;
-    private int numero;
-    
-    public void pagar()
-    {
-        System.out.println("Pagar debito");
-    }
+public class TarjetaDebito extends Tarjeta implements Pagos {
 
-    public TarjetaDebito(String nombre, int numero) {
-        this.nombre = nombre;
-        this.numero = numero;
+    @Override
+    public void pagar() {
+        System.out.println("Pagando debito");
     }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    
 }
