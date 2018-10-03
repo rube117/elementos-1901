@@ -26,10 +26,23 @@ public class PrimaveraApplication implements CommandLineRunner {
         // Guarda un mensaje
         // repoMensa.save(new Mensajito("SQL vs PHP", "¿Quién ganará?", LocalDate.now()));
         
+        /*
         // Buscamos todos los mensajes
         for (Mensajito mensa : repoMensa.findAll()) {
             System.out.println(mensa);
         }
-
+        */
+        
+        /*
+        // Buscamos por ID
+        System.out.println(repoMensa.findById("5bb422b4c35d8012e45e0e1d").get());
+        */
+        
+        // Buscar por título
+        repoMensa.save(new Mensajito("malo", "yo", "topoyiya", LocalDate.now()));
+        System.out.println(repoMensa.findByTitulo("yo"));
+        
+        repoMensa.delete(new Mensajito("malo"));
+        
     }
 }
