@@ -20,6 +20,11 @@ public class Mensajito {
     private String cuerpo;
     private LocalDate fecha;
 
+    @Override
+    public String toString() {
+        return "Mensajito{" + "id=" + id + ", titulo=" + titulo + ", cuerpo=" + cuerpo + ", fecha=" + fecha + '}';
+    }
+
     public Mensajito(String titulo, String cuerpo, LocalDate fecha) {
         this.titulo = titulo;
         this.cuerpo = cuerpo;
@@ -60,6 +65,5 @@ public class Mensajito {
     public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
-    
     
 }
