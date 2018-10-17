@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author T-107
  */
 @RestController
-@RequestMapping("/mapa")
+@RequestMapping("/api")
 public class ControladorCliente {
     @Autowired RepositorioCliente c;
     
