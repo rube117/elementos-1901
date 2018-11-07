@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = {"https://angular-fhwsnn.stackblitz.io"})
 public class ControladorMensajitos {
     @Autowired RepositorioMensajes mensa;
     // Mi primer Hola Mundo desde REST API
